@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>wumbo.org</title>
+<style>
+body 
+{
+	background-color: #255C69;
+}
+
+h1 
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: black;
+	font-size: 40px;
+}
+
+p.hidden{
+	display: none;
+}
+
+div.body
+{
+	max-width: 600px;
+	margin: auto;
+	background-color: white;
+	border: solid 1px;
+	min-height: 98vh;
+
+}
+
+div.body2
+{
+	max-width: 580px;
+	margin: auto;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: black;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 15px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: white;
+	color: black;
+}
+
+</style>
+</head>
+<body>
+<div class="body">
+<h1>
+&nbsp; wumbo.org
+</h1>
+<ul>
+	<li>
+		<a href="#home" onclick="home()">Home</a></li>
+	<li>
+		<a href="#news" onclick="news()">News</a></li>
+	<li>
+		<a href="#contact" onclick="contact()">Contact</a></li>
+	<li>
+		<a href="#about"  onclick="about()">About</a></li>
+</ul>
+
+<div class="body2">
+<p id="home">
+asdf
+</p>
+<p class="hidden"  id="news">
+
+
+
+</p>
+<p class="hidden" id="contact">
+
+zxcv
+
+</p>
+<p class="hidden"  id="about">
+<iframe width="420" height="315"
+src="http://www.youtube.com/embed/--hsVknT1c0?autoplay=0">
+</iframe>
+</p>
+</div>
+<script> 
+function home(){
+	document.getElementById("home").style.display = "block";
+	document.getElementById("news").style.display = "none";
+	document.getElementById("contact").style.display = "none";
+	document.getElementById("about").style.display = "none";
+	}
+function news(){
+	document.getElementById("home").style.display = "none";
+	document.getElementById("news").style.display = "block";
+	document.getElementById("contact").style.display = "none";
+	document.getElementById("about").style.display = "none";
+}
+function contact(){
+	document.getElementById("home").style.display = "none";
+	document.getElementById("news").style.display = "none";
+	document.getElementById("contact").style.display = "block";
+	document.getElementById("about").style.display = "none";
+}
+function about(){
+	document.getElementById("home").style.display = "none";
+	document.getElementById("news").style.display = "none";
+	document.getElementById("contact").style.display = "none";
+	document.getElementById("about").style.display = "block";
+}
+</script>
+
+
+
+
+
+
+
+
+
+</div>
+</body>
+
+</html>
