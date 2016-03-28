@@ -3,26 +3,28 @@
 <head>
 <title>wumbo.org</title>
 <style>
-body 
-{
+body {
 	background-color: #255C69;
 }
 
-h1 
-{
+h1 {
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: bold;
 	color: black;
 	font-size: 40px;
 }
 
-p.hidden{
+h2, p {
+	font-family: Helvetica;
+}
+
+
+div.hidden{
 	display: none;
 }
 
-div.body
-{
-	max-width: 600px;
+div.body{
+	max-width: 18cm;
 	margin: auto;
 	background-color: white;
 	border: solid 1px;
@@ -30,13 +32,16 @@ div.body
 
 }
 
-div.body2
-{
+div.body2{
 	max-width: 580px;
 	margin: auto;
 }
+a {
+	font-family: Helvetica;
+}
 
 ul {
+	font-family: Helvetica;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -69,35 +74,78 @@ li a:hover {
 &nbsp; wumbo.org
 </h1>
 <ul>
-	<li>
-		<a href="#home" onclick="home()">Home</a></li>
-	<li>
-		<a href="#news" onclick="news()">News</a></li>
-	<li>
-		<a href="#contact" onclick="contact()">Contact</a></li>
-	<li>
-		<a href="#about"  onclick="about()">About</a></li>
+	<li><a href="#home" onclick="home()">Home</a></li>
+	<li><a href="#work" onclick="news()">Work</a></li>
+	<li><a href="#links" onclick="contact()">Links</a></li>
+	<li><a href="#about"  onclick="about()">About</a></li>
 </ul>
 
 <div class="body2">
-<p id="home">
-asdf
-</p>
-<p class="hidden"  id="news">
+<div id="home" style="display:block">
+	<h2> Greetings! </h2>
+	<p> <img src="./assets/me.jpg" alt="After a trans-atlantic flight." width="270"  align="right">  This is the personal webpage for Greg Kondyukov. </p> 
+</div>
 
+<div class="hidden"  id="news">
 
+<h2>Education</h2>
+	<p>At Florida State University I received a dual degree in Physics and 
+	in Applied and Computational Mathematics. For Physics I was given Honors
+	in the Major for completing an honors thesis  in computational nuclear 
+	physics under the advisement of <a href="http://www.volya.net">Dr. Alexander Volya.</a></p>
+	
+	<p>Beside physics and mathematics study, I also took a large breadth of 
+	computer science courses which were mainly taught in C++. From the coursework
+	I have a thorough understanding of object-oriented database programming, 
+	algorithms, and low-level programming. </p>
 
-</p>
-<p class="hidden" id="contact">
+<h2>Research and Experience</h2>
+	<p>From May 2014 to December 2015 I conducted reseach under Dr. Alexander 
+	Volya that I used to develop my <a href="http://diginole.lib.fsu.edu/islandora/object/fsu%3A270354">honors thesis.</a> 
+	which was successfully defended in May 2015. However, I decided to stay at
+	the university for an additional semester during which time I expanded upon
+	the original work by developing methods for complex resonance calculations.</p>
+	
+	<p>From August 2012 to May 2014 I was employed at the FSU <a href="http://physics.fsu.edu">Department of Physics</a>
+	via the Federal Work-Study program. During this time I worked in developing 
+	automation software for scientific equipment, process control mechanisms for 
+	National Instruments equipment, and FPGAs.
+	
+	<p> Here's a link to my <a href="./assets/Kondyukov_CV_2016.pdf">CV</a>.
+<h2>Outreach</h2>
+	<p> For the 2014-2015 academic year I was the Vice President of the 
+	Florida State University chapter of the Society of Physics Students. 
+	Along with my, collegues I worked to build and maintain a community for 
+	undergraduates interested in physics. We also gave talks at local 
+	events for people of all ages to help develop an interest in science.</p>
+		
+	<p> In addition to working on research, I spent every summer at Florida 
+	State Univeristy mentoring incoming physics students.</p>
 
-zxcv
+</div>
+<div class="hidden" id="contact">
 
-</p>
-<p class="hidden"  id="about">
-<iframe width="420" height="315"
-src="http://www.youtube.com/embed/--hsVknT1c0?autoplay=0">
-</iframe>
-</p>
+<h2> Links </h2>
+
+</div>
+<div class="hidden"  id="about">
+	<h2> What is wumbo? </h2>
+	
+	<p> Wumbo is a nonsense word from the show about everybody's
+		favourite animated sea sponge. For your education, here's 
+		the inception of the eponymous word itself.</p>
+		
+	<iframe width="420" height="315" align="middle"
+		src="http://www.youtube.com/embed/--hsVknT1c0?autoplay=0">
+	</iframe><br><br>
+	
+	<h2> But why wumbo? </h2>
+	
+	<p> It made for a short, catchy, and (most importantly) available
+		domain name. Normally I have a home server connected to this 
+		domain, but my current internet provider restricts those sort 
+		of things.</p>
+</div>
 </div>
 <script> 
 function home(){
@@ -125,14 +173,6 @@ function about(){
 	document.getElementById("about").style.display = "block";
 }
 </script>
-
-
-
-
-
-
-
-
 
 </div>
 </body>
